@@ -47,3 +47,23 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Centering container for the app pages. Keeps current design/flow but vertically centers children. */
+.pageWrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* stretch children full-width on desktop so components control their own centering */
+  align-items: stretch;
+  justify-content: center;
+}
+
+/* Preserve centered layout for smaller screens */
+@media (max-width: 900px) {
+  .pageWrapper {
+    align-items: center;
+  }
+}
+
+/* If Navbar is enabled as a fixed element, consumers can add a top offset variable or adjust layout accordingly. */
