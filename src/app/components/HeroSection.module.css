@@ -29,8 +29,8 @@
     pointer-events: none;
     z-index: 0;
     /* Stronger bright center that fades into transparent edges */
-    background: radial-gradient(circle at center, rgba(225, 131, 58, 0.48) 0%, rgba(255,120,50,0.34) 30%, rgba(220,90,35,0.18) 55%, transparent 85%);
-    filter: blur(48px);
+    background: radial-gradient(circle at center, rgba(105, 35, 226, 0.694) 0%, rgba(142, 50, 255, 0.34) 30%, rgba(115, 35, 220, 0.18) 55%, transparent 80%);
+    filter: blur(40px);
     transform-origin: center;
     animation: glowSpread 8s ease-in-out infinite;
     border-radius: 50%;
@@ -39,21 +39,22 @@
 }
 
 .HeroSectionProfileImage {
+    display: block;
     border-radius: 2em;
-    border: 1px solid rgb(255, 64, 0);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: inset 0 0 0.8rem rgba(255, 255, 255, 0.08), 0 18px 40px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     z-index: 3;
     object-fit: cover;
-}
-
-/* micro-interactions & entry animations */
-.HeroSectionProfileImage {
+    transform-origin: center center;
     transition: transform 360ms cubic-bezier(.2,.9,.22,1), box-shadow 260ms ease;
     will-change: transform;
     animation: popIn 420ms ease both;
 }
 .HeroSectionProfileImage:hover {
-    transform: translateY(-6px) scale(1.035);
-    box-shadow: 0 18px 42px rgba(0,0,0,0.24), 0 0 28px rgba(255,140,60,0.06) inset;
+    transform: scale(1.035);
 }
 
 @keyframes popIn {
@@ -69,7 +70,7 @@
     height: 180px;
     object-fit: cover;
     border-radius: 1rem;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    /* box-shadow: 0 8px 20px rgba(0,0,0,0.25); */
     opacity: 0.98;
 }
 
@@ -133,8 +134,9 @@
     margin: 0.9em 0 0.8em 0;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 900;
+    font-weight: 600;
     font-style: normal;
+    color: rgb(0, 0, 0);
 }
 
 .HeroSectionName {
@@ -142,7 +144,7 @@
     font-size: 2.6rem;
     font-optical-sizing: auto;
     font-weight: 700;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     transition: color 220ms ease, transform 180ms ease;
     cursor: pointer;
 }
@@ -154,7 +156,7 @@
 
 .HeroSectionPara {
     width: 70%;
-    color: rgb(204, 204, 204);
+    color: rgb(0, 0, 0);
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -190,19 +192,19 @@
 
 .ButtonOutline {
     background: transparent;
-    color: #ffffff;
+    color: #000000;
     padding: 0.66rem 1.25rem;
     border-radius: 10px;
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 0.4px;
-    border: 2px solid #ffffff;
+    border: 2px solid #000000;
     transition: background 160ms ease, color 160ms ease;
 }
 
 .ButtonOutline:hover {
-    background: #ffffff;
-    color: #000000;
+    background: #000000;
+    color: #ffffff;
 }
 
 .ButtonIcon {

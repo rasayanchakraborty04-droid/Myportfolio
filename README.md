@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website
+
+A modern personal portfolio built with Next.js, React, and a clean light theme. This project showcases a polished hero section, profile highlights, responsive mobile layout, and social integration through a custom footer.
+
+## Key Features
+
+- Responsive hero section with animated visuals and call-to-action buttons
+- Image optimization using Next.js `Image` component for better loading performance
+- Light-themed UI with soft gradients, glassmorphism-style cards, and subtle motion
+- Dedicated `about` page for personal story and technology focus
+- Custom footer with direct social links for Instagram, X, and GitHub
+- Mobile-first responsive design across hero and footer sections
+
+## Tech Stack
+
+- Next.js 16.2.6
+- React 19.2.4
+- TypeScript
+- CSS Modules
+- `react-icons`
+- ESLint for code quality
+
+## Project Structure
+
+- `app/`
+  - `layout.tsx` — application shell and global wrapper
+  - `page.tsx` — homepage / hero section
+  - `about/page.tsx` — about page content
+  - `globals.css` — global browser styles and theme basics
+- `src/app/components/`
+  - `HeroSection.tsx` — hero area with imagery and CTA buttons
+  - `HeroSection.module.css` — hero-specific styles and animations
+- `src/app/utils/`
+  - `Footer.tsx` / `Footer.module.css` — footer links and layout
+  - `Navbar.tsx` / `Navbar.module.css` — optional navigation bar styling
+- `package.json` — project scripts and dependencies
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and start the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000` in your browser to preview the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` — run the local development server
+- `npm run build` — build the production app
+- `npm run start` — run the production build
+- `npm run lint` — lint the project with ESLint
 
-## Learn More
+## Customization Notes
 
-To learn more about Next.js, take a look at the following resources:
+- Update the hero section text and profile image in `src/app/components/HeroSection.tsx`
+- Change the about page content in `app/about/page.tsx`
+- Adjust colors, spacing, and responsive behavior in the corresponding CSS module files
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This app is ready to deploy on any platform that supports Next.js, including Vercel and Netlify. Use the `npm run build` command to generate a production build before deployment.
 
-## Deploy on Vercel
+## Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For quick edits, update the social links in `src/app/utils/Footer.tsx` and the hero section buttons in `src/app/components/HeroSection.tsx`.

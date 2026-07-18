@@ -37,7 +37,7 @@
 }
 
 .navLink {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   font-weight: 300;
   letter-spacing: 0.4px;
@@ -60,10 +60,11 @@
 .logo {
   font-weight: 800;
   letter-spacing: 1px;
+  color: #000;
 }
 
 .socialIcon {
-  color: #bfbfbf;
+  color: #000000;
   display: inline-flex;
   align-items: center;
   justify-content: center;

@@ -10,18 +10,18 @@ export default function HeroSection() {
             <div className={styles.HeroSectionImage}>
                 <Image
                     className={styles.HeroSectionLeftIcon}
-                    src="/DaVinci_Resolve_Icon.png"
+                    src="/docker_rbg.png"
                     alt="DaVinci Resolve logo"
                     width={220}
                     height={220}
                     loading="lazy"
                     sizes="(max-width: 480px) 120px, (max-width: 900px) 150px, 180px"
-                    quality={70}
+                    quality={75}
                 />
 
                 <Image
                     className={styles.HeroSectionProfileImage}
-                    src="/profile_pic_1.jpg"
+                    src="/profile_pic_1.jpeg"
                     alt="Profile picture of Rasayan"
                     width={260}
                     height={260}
@@ -32,13 +32,13 @@ export default function HeroSection() {
 
                 <Image
                     className={styles.HeroSectionRightIcon}
-                    src="/vscode_icon.png"
+                    src="/kube_rbg.svg.webp"
                     alt="VS Code logo"
                     width={220}
                     height={220}
                     loading="lazy"
                     sizes="(max-width: 480px) 120px, (max-width: 900px) 150px, 180px"
-                    quality={70}
+                    quality={75}
                 />
             </div>
 
