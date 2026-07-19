@@ -18,7 +18,7 @@ export default function Navbar(): JSX.Element {
         <nav className={styles.center} aria-label="Main navigation">
           <a href="/about" className={styles.navLink}>About</a>
           <a href="#projects" className={styles.navLink}>Projects</a>
-          <a href="#contact" className={styles.navLink}>Contact</a>
+          <a href="/contact" className={styles.navLink}>Contact</a>
         </nav>
 
         <div className={styles.right}>

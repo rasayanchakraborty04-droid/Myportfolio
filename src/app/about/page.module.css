@@ -20,8 +20,11 @@
 .aboutContent h3 {
     width: 100%;
     text-align: left;
-    color: black;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 247, 196);
     font-size: 2em;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.6rem;
 }
 
 .aboutContent p {
