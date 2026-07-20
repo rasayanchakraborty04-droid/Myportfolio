@@ -49,7 +49,7 @@ export default function HeroSection() {
                 </h5>
 
                 <p className={styles.HeroSectionPara}>
-                        "merging creativity with code to craft immersive digital experiences" - me.
+                        "focussed at making development & deployemnet more smooth" - me.
                 </p>
                     <div className={styles.HeroButtons}>
                         <a className={styles.ButtonPrimary} href="#" aria-label="Download resume">

@@ -6,7 +6,7 @@ export default function Footer() {
             <div className={styles.footerContent}>
                 <div className={styles.footerLeftContent}>
                     <h2 className={styles.footerLeftHeading}>rasayan</h2>
-                    <p className={styles.footerLeftDescription}>Once I am editing videos and in other times I am programming</p>
+                    <p className={styles.footerLeftDescription}>Software developer helping people to have their own identity</p>
                     <p className={styles.footerLeftCopyright1}>© rasayan 2026</p>
                     <p className={styles.footerLeftCopyright2}>all rights reserved</p>
                 </div>

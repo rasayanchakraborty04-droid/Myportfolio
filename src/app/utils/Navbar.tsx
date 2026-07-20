@@ -12,7 +12,9 @@ export default function Navbar(): JSX.Element {
     <header className={styles.navbar}>
       <div className={styles.container}>
         <div className={styles.left}>
-          <span className={styles.logo}>RASAYAN</span>
+          <span className={styles.logo}>
+            <a href="/">RASAYAN</a>
+            </span>
         </div>
 
         <nav className={styles.center} aria-label="Main navigation">

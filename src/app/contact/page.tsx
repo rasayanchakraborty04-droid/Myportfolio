@@ -3,12 +3,41 @@ import styles from './page.module.css'
 export default function ContactPage() {
     return (
         <div className={styles.contactPage}>
-            <h1 className={styles.contactHeader}>Contact Me</h1>
-            <p className={styles.contactDescription}>
-                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out to me through any of the platforms below.
-            </p>
-            <div className={styles.contactLinks}>
-                <a href="mailto:your-email@example.com">Email</a>
+            
+            <div className={styles.contactPage_content}>
+                <h2>Contact Me</h2>
+
+                <div className={styles.contact_options}>
+                    <div className={styles.contact_address}>
+                        <p>
+                            Bangalore, India
+                            <br/>
+                            Karnataka - 560059
+                        </p>
+
+                        <p>
+                            My work hours:
+                            <br/>
+                            Monday - Friday: 9:00 AM - 6:00 PM (IST)
+                            <br/>
+                        </p>
+                    </div>
+
+                    <div className={styles.contact_email}>
+                        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                            <label htmlFor="name">Name (required)</label>
+                            <input type="text" id="name" name="name" placeholder='First Name + Last Name' required />
+
+                            <label htmlFor="email">Email (required)</label>
+                            <input type="email" id="email" name="email" placeholder='Your E-Mail' required />
+
+                            <label htmlFor="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+
+                            <button type="submit">Send Email</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     )
